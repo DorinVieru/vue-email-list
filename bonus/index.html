@@ -16,10 +16,10 @@
         <div class="container my-5">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h1 class="my-3 text-center text-primary">Lista di email casuali</h1>
+                    <h1 class="my-3 text-center text-warning">Lista di email casuali (BONUS)</h1>
                     <!-- LISTA MAILS -->
                     <ul class="list-group">
-                        <li class="list-group-item" v-for="(mail, index) in mails">{{ mail }}</li>
+                        <li class="list-group-item" v-for="(mail, index) in mails" v-if="mails.length == 10">{{ mail }}</li>
                     </ul>
                 </div>
             </div>
