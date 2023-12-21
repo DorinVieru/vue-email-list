@@ -18,8 +18,8 @@
                 <div class="col-12 text-center">
                     <h1 class="my-3 text-center text-warning">Lista di email casuali (BONUS)</h1>
                     <!-- LISTA MAILS -->
-                    <ul class="list-group">
-                        <li class="list-group-item" v-for="(mail, index) in mails" v-if="mails.length == 10">{{ mail }}</li>
+                    <ul class="list-group" v-if="mails.length == 10">
+                        <li class="list-group-item" v-for="(mail, index) in mails">{{ mail }}</li>
                     </ul>
                 </div>
             </div>
